@@ -4,14 +4,49 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>ElClima WatchKit App.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>ElClima.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>Glance - ElClima WatchKit App.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>MyWeather.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>Notification - ElClima WatchKit App.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>44C6A6CD1AB8E1BE00548D26</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>44C6A6E81AB8E2BC00548D26</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>44C6A6F21AB8E2BC00548D26</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>44E5E91C1AB8D0A200F72F39</key>
 		<dict>
 			<key>primary</key>

@@ -1,11 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
    LastUpgradeVersion = "0620"
-   version = "1.3">
+   version = "2.0">
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
       <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "44C6A6CD1AB8E1BE00548D26"
+               BuildableName = "ElClima WatchKit App.app"
+               BlueprintName = "ElClima WatchKit App"
+               ReferencedContainer = "container:ElClima.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
          <BuildActionEntry
             buildForTesting = "YES"
             buildForRunning = "YES"
@@ -23,14 +37,14 @@
          <BuildActionEntry
             buildForTesting = "YES"
             buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "44E5E9351AB8D0A200F72F39"
-               BuildableName = "ElClimaTests.xctest"
-               BlueprintName = "ElClimaTests"
+               BlueprintIdentifier = "44C6A6BB1AB8E1BE00548D26"
+               BuildableName = "ElClima WatchKit Extension.appex"
+               BlueprintName = "ElClima WatchKit Extension"
                ReferencedContainer = "container:ElClima.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -60,16 +74,6 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "44E5E9351AB8D0A200F72F39"
-               BuildableName = "ElClimaTests.xctest"
-               BlueprintName = "ElClimaTests"
-               ReferencedContainer = "container:ElClima.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
                BlueprintIdentifier = "44C6A6F21AB8E2BC00548D26"
                BuildableName = "MyWeatherTests.xctest"
                BlueprintName = "MyWeatherTests"
@@ -80,9 +84,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "44E5E91C1AB8D0A200F72F39"
-            BuildableName = "ElClima.app"
-            BlueprintName = "ElClima"
+            BlueprintIdentifier = "44C6A6CD1AB8E1BE00548D26"
+            BuildableName = "ElClima WatchKit App.app"
+            BlueprintName = "ElClima WatchKit App"
             ReferencedContainer = "container:ElClima.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -95,17 +99,30 @@
       buildConfiguration = "Debug"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
-      allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      allowLocationSimulation = "YES"
+      launchAutomaticallySubstyle = "4"
+      notificationPayloadFile = "ElClima WatchKit Extension/PushNotificationPayload.apns">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.springboard"
+         RemotePath = "/ElClima">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "44E5E91C1AB8D0A200F72F39"
-            BuildableName = "ElClima.app"
-            BlueprintName = "ElClima"
+            BlueprintIdentifier = "44C6A6CD1AB8E1BE00548D26"
+            BuildableName = "ElClima WatchKit App.app"
+            BlueprintName = "ElClima WatchKit App"
             ReferencedContainer = "container:ElClima.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "44C6A6CD1AB8E1BE00548D26"
+            BuildableName = "ElClima WatchKit App.app"
+            BlueprintName = "ElClima WatchKit App"
+            ReferencedContainer = "container:ElClima.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -115,16 +132,27 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.springboard"
+         RemotePath = "/ElClima">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "44E5E91C1AB8D0A200F72F39"
-            BuildableName = "ElClima.app"
-            BlueprintName = "ElClima"
+            BlueprintIdentifier = "44C6A6CD1AB8E1BE00548D26"
+            BuildableName = "ElClima WatchKit App.app"
+            BlueprintName = "ElClima WatchKit App"
             ReferencedContainer = "container:ElClima.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "44C6A6CD1AB8E1BE00548D26"
+            BuildableName = "ElClima WatchKit App.app"
+            BlueprintName = "ElClima WatchKit App"
+            ReferencedContainer = "container:ElClima.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
