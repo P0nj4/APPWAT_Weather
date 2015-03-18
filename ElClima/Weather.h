@@ -18,6 +18,6 @@ typedef void (^WeatherLoadCompletition)(NSError **, Weather *);
 @property (nonatomic) NSInteger temp;
 @property (nonatomic) NSInteger humidity;
 @property (nonatomic) NSInteger windSpeed;
-+ (void)loadWheaterForLat:(long)lat Lon:(long)lon completationHandler:(WeatherLoadCompletition)completition;
++ (void)loadWheaterForLat:(float)lat Lon:(float)lon completationHandler:(WeatherLoadCompletition)completition;
 @end
 

@@ -1,21 +1,90 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6724" systemVersion="14A389" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3735"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider=""/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <label alignment="center" text="Locaciones" textAlignment="left" id="OuT-Bh-JW1">
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <table alignment="left" id="Vwo-7e-AgN">
+                            <items>
+                                <tableRow identifier="LocationRow" id="hbX-5G-2zX" customClass="LocationRow">
+                                    <group key="rootItem" width="1" alignment="left" id="rqc-MM-wB8">
+                                        <items>
+                                            <label alignment="left" text="ubicacion" id="uTA-OA-rUC"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="rowDescription" destination="uTA-OA-rUC" id="WqB-NX-r4E"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="Vwo-7e-AgN" id="I2c-P8-9zl"/>
+                    </connections>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="235" y="347"/>
+            <point key="canvasLocation" x="211" y="344"/>
+        </scene>
+        <!--Clima-->
+        <scene sceneID="Cyf-xV-hFg">
+            <objects>
+                <controller identifier="WeatherInterfaceController" title="Clima" id="AWh-wp-Zj4" customClass="WeatherInterfaceController">
+                    <items>
+                        <label width="135" alignment="center" text="30 °C" textAlignment="center" id="n71-QD-g9F">
+                            <fontDescription key="font" type="system" weight="heavy" pointSize="23"/>
+                        </label>
+                        <group width="1" alignment="left" id="Iw8-a0-yDd">
+                            <items>
+                                <label alignment="left" text="Humedad:" id="TAc-Uh-Ekw"/>
+                                <label alignment="left" text="50%" id="fIX-EF-Wac"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="Ue1-XY-5We">
+                            <items>
+                                <label alignment="left" text="Viento" id="CHv-hq-Ffs"/>
+                                <label alignment="left" text="1 km/h" id="Vbj-wh-1ag"/>
+                            </items>
+                        </group>
+                        <label width="133" alignment="left" text="Nublado" textAlignment="center" numberOfLines="0" id="Kh3-Dp-0RK">
+                            <fontDescription key="font" type="system" pointSize="12"/>
+                        </label>
+                        <button width="1" alignment="left" title="Ver mapa" id="9Dx-Kf-Lu3">
+                            <connections>
+                                <action selector="btnShowMapPressed" destination="AWh-wp-Zj4" id="ZTf-IW-3Ho"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="lblDescription" destination="Kh3-Dp-0RK" id="KlY-xu-spR"/>
+                        <outlet property="lblHumidity" destination="fIX-EF-Wac" id="qOz-ZO-FTC"/>
+                        <outlet property="lblTemp" destination="n71-QD-g9F" id="xG8-2g-glQ"/>
+                        <outlet property="lblWindSpeed" destination="Vbj-wh-1ag" id="zga-oL-Byz"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="433" y="348"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="EDt-Fk-WDx">
+            <objects>
+                <controller id="PfZ-w1-9Lb"/>
+            </objects>
+            <point key="canvasLocation" x="621" y="344"/>
         </scene>
         <!--Glance Interface Controller-->
         <scene sceneID="BOz-TT-tkC">
             <objects>
-                <glanceController spacing="0.0" id="0uZ-2p-rRc" customClass="GlanceController" customModuleProvider="">
+                <glanceController spacing="0.0" id="0uZ-2p-rRc" customClass="GlanceController">
                     <items>
                         <group alignment="left" id="t8f-Gd-c4y"/>
                         <group alignment="left" id="uCw-4Q-Ouw"/>
@@ -44,7 +113,7 @@
         <!--Notification Controller-->
         <scene sceneID="KIl-fV-djm">
             <objects>
-                <controller id="gdX-wl-uQE" customClass="NotificationController" customModuleProvider=""/>
+                <controller id="gdX-wl-uQE" customClass="NotificationController"/>
             </objects>
             <point key="canvasLocation" x="553" y="1001"/>
         </scene>

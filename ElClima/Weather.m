@@ -12,8 +12,8 @@
 
 
 
-+ (void)loadWheaterForLat:(long)lat Lon:(long)lon completationHandler:(WeatherLoadCompletition)completition {
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://api.openweathermap.org/data/2.5/weather?lat=%li&lon=%li&units=metric&lang=sp", lat, lon]];
++ (void)loadWheaterForLat:(float)lat Lon:(float)lon completationHandler:(WeatherLoadCompletition)completition {
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://api.openweathermap.org/data/2.5/weather?lat=%f&lon=%f&units=metric&lang=sp", lat, lon]];
     NSURLRequest *request = [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:30];
     NSOperationQueue *queue = [[NSOperationQueue alloc] init];
     [NSURLConnection sendAsynchronousRequest:request queue:queue completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {

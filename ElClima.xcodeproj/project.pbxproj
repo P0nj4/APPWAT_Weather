@@ -27,8 +27,10 @@
 		44E5E92E1AB8D0A200F72F39 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44E5E92D1AB8D0A200F72F39 /* Images.xcassets */; };
 		44E5E9311AB8D0A200F72F39 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44E5E92F1AB8D0A200F72F39 /* LaunchScreen.xib */; };
 		44E5E9491AB8D26900F72F39 /* Weather.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E5E9481AB8D26900F72F39 /* Weather.m */; };
+		4B8506F41AB9D00400B8A2EB /* WeatherInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8506F31AB9D00400B8A2EB /* WeatherInterfaceController.m */; };
 		4BD0092A1AB9BE15007D617A /* LocationUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD009291AB9BE15007D617A /* LocationUtilities.m */; };
 		4BD0092D1AB9C456007D617A /* LocationUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD009291AB9BE15007D617A /* LocationUtilities.m */; };
+		4BD009311AB9C65A007D617A /* LocationRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD009301AB9C65A007D617A /* LocationRow.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,10 +112,14 @@
 		44E5E9301AB8D0A200F72F39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		44E5E9471AB8D26900F72F39 /* Weather.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Weather.h; sourceTree = "<group>"; };
 		44E5E9481AB8D26900F72F39 /* Weather.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Weather.m; sourceTree = "<group>"; };
+		4B8506F21AB9D00400B8A2EB /* WeatherInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherInterfaceController.h; sourceTree = "<group>"; };
+		4B8506F31AB9D00400B8A2EB /* WeatherInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherInterfaceController.m; sourceTree = "<group>"; };
 		4BD009281AB9BE15007D617A /* LocationUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationUtilities.h; sourceTree = "<group>"; };
 		4BD009291AB9BE15007D617A /* LocationUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationUtilities.m; sourceTree = "<group>"; };
 		4BD0092B1AB9C065007D617A /* ElClima.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ElClima.entitlements; sourceTree = "<group>"; };
 		4BD0092C1AB9C082007D617A /* ElClima WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "ElClima WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		4BD0092F1AB9C65A007D617A /* LocationRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationRow.h; sourceTree = "<group>"; };
+		4BD009301AB9C65A007D617A /* LocationRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationRow.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +152,7 @@
 		44C6A6BD1AB8E1BE00548D26 /* ElClima WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				4BD0092E1AB9C63D007D617A /* Cell */,
 				4BD0092C1AB9C082007D617A /* ElClima WatchKit Extension.entitlements */,
 				44C6A6C11AB8E1BE00548D26 /* InterfaceController.h */,
 				44C6A6C21AB8E1BE00548D26 /* InterfaceController.m */,
@@ -155,6 +162,8 @@
 				44C6A6C81AB8E1BE00548D26 /* GlanceController.m */,
 				44C6A6CA1AB8E1BE00548D26 /* Images.xcassets */,
 				44C6A6BE1AB8E1BE00548D26 /* Supporting Files */,
+				4B8506F21AB9D00400B8A2EB /* WeatherInterfaceController.h */,
+				4B8506F31AB9D00400B8A2EB /* WeatherInterfaceController.m */,
 			);
 			path = "ElClima WatchKit Extension";
 			sourceTree = "<group>";
@@ -260,6 +269,15 @@
 				44E5E9481AB8D26900F72F39 /* Weather.m */,
 			);
 			name = Weather;
+			sourceTree = "<group>";
+		};
+		4BD0092E1AB9C63D007D617A /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4BD0092F1AB9C65A007D617A /* LocationRow.h */,
+				4BD009301AB9C65A007D617A /* LocationRow.m */,
+			);
+			name = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -448,6 +466,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				44C6A6C61AB8E1BE00548D26 /* NotificationController.m in Sources */,
+				4B8506F41AB9D00400B8A2EB /* WeatherInterfaceController.m in Sources */,
+				4BD009311AB9C65A007D617A /* LocationRow.m in Sources */,
 				44C6A6C31AB8E1BE00548D26 /* InterfaceController.m in Sources */,
 				44C6A6C91AB8E1BE00548D26 /* GlanceController.m in Sources */,
 			);
