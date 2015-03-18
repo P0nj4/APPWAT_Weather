@@ -27,6 +27,8 @@
 		44E5E92E1AB8D0A200F72F39 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44E5E92D1AB8D0A200F72F39 /* Images.xcassets */; };
 		44E5E9311AB8D0A200F72F39 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44E5E92F1AB8D0A200F72F39 /* LaunchScreen.xib */; };
 		44E5E9491AB8D26900F72F39 /* Weather.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E5E9481AB8D26900F72F39 /* Weather.m */; };
+		4BD0092A1AB9BE15007D617A /* LocationUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD009291AB9BE15007D617A /* LocationUtilities.m */; };
+		4BD0092D1AB9C456007D617A /* LocationUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD009291AB9BE15007D617A /* LocationUtilities.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +110,10 @@
 		44E5E9301AB8D0A200F72F39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		44E5E9471AB8D26900F72F39 /* Weather.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Weather.h; sourceTree = "<group>"; };
 		44E5E9481AB8D26900F72F39 /* Weather.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Weather.m; sourceTree = "<group>"; };
+		4BD009281AB9BE15007D617A /* LocationUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationUtilities.h; sourceTree = "<group>"; };
+		4BD009291AB9BE15007D617A /* LocationUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationUtilities.m; sourceTree = "<group>"; };
+		4BD0092B1AB9C065007D617A /* ElClima.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ElClima.entitlements; sourceTree = "<group>"; };
+		4BD0092C1AB9C082007D617A /* ElClima WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "ElClima WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +146,7 @@
 		44C6A6BD1AB8E1BE00548D26 /* ElClima WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				4BD0092C1AB9C082007D617A /* ElClima WatchKit Extension.entitlements */,
 				44C6A6C11AB8E1BE00548D26 /* InterfaceController.h */,
 				44C6A6C21AB8E1BE00548D26 /* InterfaceController.m */,
 				44C6A6C41AB8E1BE00548D26 /* NotificationController.h */,
@@ -221,6 +228,7 @@
 		44E5E91F1AB8D0A200F72F39 /* ElClima */ = {
 			isa = PBXGroup;
 			children = (
+				4BD0092B1AB9C065007D617A /* ElClima.entitlements */,
 				44E5E9461AB8D23500F72F39 /* Weather */,
 				44E5E9241AB8D0A200F72F39 /* AppDelegate.h */,
 				44E5E9251AB8D0A200F72F39 /* AppDelegate.m */,
@@ -230,6 +238,8 @@
 				44E5E92D1AB8D0A200F72F39 /* Images.xcassets */,
 				44E5E92F1AB8D0A200F72F39 /* LaunchScreen.xib */,
 				44E5E9201AB8D0A200F72F39 /* Supporting Files */,
+				4BD009281AB9BE15007D617A /* LocationUtilities.h */,
+				4BD009291AB9BE15007D617A /* LocationUtilities.m */,
 			);
 			path = ElClima;
 			sourceTree = "<group>";
@@ -349,6 +359,12 @@
 				TargetAttributes = {
 					44C6A6BB1AB8E1BE00548D26 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 92RHCHQV8Z;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					44C6A6CD1AB8E1BE00548D26 = {
 						CreatedOnToolsVersion = 6.2;
@@ -358,6 +374,12 @@
 					};
 					44E5E91C1AB8D0A200F72F39 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 92RHCHQV8Z;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -435,6 +457,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BD0092D1AB9C456007D617A /* LocationUtilities.m in Sources */,
 				44C6A7091AB8E2D200548D26 /* Weather.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -445,6 +468,7 @@
 			files = (
 				44E5E9491AB8D26900F72F39 /* Weather.m in Sources */,
 				44E5E9291AB8D0A200F72F39 /* ViewController.m in Sources */,
+				4BD0092A1AB9BE15007D617A /* LocationUtilities.m in Sources */,
 				44E5E9261AB8D0A200F72F39 /* AppDelegate.m in Sources */,
 				44E5E9231AB8D0A200F72F39 /* main.m in Sources */,
 			);
@@ -531,6 +555,9 @@
 		44C6A6E11AB8E1BE00548D26 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "ElClima WatchKit Extension/ElClima WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -538,6 +565,7 @@
 				INFOPLIST_FILE = "ElClima WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -545,9 +573,13 @@
 		44C6A6E21AB8E1BE00548D26 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "ElClima WatchKit Extension/ElClima WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "ElClima WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -674,9 +706,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ElClima/ElClima.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ElClima/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -684,9 +720,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ElClima/ElClima.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ElClima/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -700,6 +740,7 @@
 				44C6A6DF1AB8E1BE00548D26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		44C6A6E01AB8E1BE00548D26 /* Build configuration list for PBXNativeTarget "ElClima WatchKit Extension" */ = {
 			isa = XCConfigurationList;
@@ -708,6 +749,7 @@
 				44C6A6E21AB8E1BE00548D26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		44C6A7021AB8E2BC00548D26 /* Build configuration list for PBXNativeTarget "MyWeather" */ = {
 			isa = XCConfigurationList;
@@ -716,6 +758,7 @@
 				44C6A7041AB8E2BC00548D26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		44E5E9181AB8D0A200F72F39 /* Build configuration list for PBXProject "ElClima" */ = {
 			isa = XCConfigurationList;
