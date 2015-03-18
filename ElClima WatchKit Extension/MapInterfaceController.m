@@ -21,15 +21,8 @@
     [super awakeWithContext:context];
     
     self.coordinates = context;
-    NSString *lat = [[self.coordinates componentsSeparatedByString:@","] firstObject];
-    NSString *lon = [[self.coordinates componentsSeparatedByString:@","] lastObject];
-    CLLocationCoordinate2D cllocation = CLLocationCoordinate2DMake([lat floatValue], [lon floatValue]);
-    
-    MKMapRect zoomRect = MKMapRectNull;
-    MKMapPoint annotationPoint = MKMapPointForCoordinate(cllocation);
-    MKMapRect pointRect = MKMapRectMake(annotationPoint.x, annotationPoint.y, 0.1, 0.1);
-    zoomRect = MKMapRectUnion(zoomRect, pointRect);
-    //[self.map setVisibleMapRect:zoomRect];
+
+    [self loadMap];
 }
 
 - (void)willActivate {
@@ -41,6 +34,17 @@
     // This method is called when watch view controller is no longer visible
     [super didDeactivate];
 }
+
+- (void)loadMap {
+    NSString *lat = [[self.coordinates componentsSeparatedByString:@","] firstObject];
+    NSString *lon = [[self.coordinates componentsSeparatedByString:@","] lastObject];
+    
+    CLLocationCoordinate2D location = CLLocationCoordinate2DMake([lat floatValue], [lon floatValue]);
+    MKCoordinateSpan coordinateSpan = MKCoordinateSpanMake(10, 10);
+    [self.map addAnnotation:location withPinColor:WKInterfaceMapPinColorPurple];
+    [self.map setRegion:MKCoordinateRegionMake(location, coordinateSpan)];
+}
+
 
 @end
 
