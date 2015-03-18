@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--Mi Clima-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController">
+                <controller title="Mi Clima" id="AgC-eL-Hgc" customClass="InterfaceController">
                     <items>
                         <label alignment="center" text="Locaciones" textAlignment="left" id="OuT-Bh-JW1">
                             <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
@@ -41,7 +41,7 @@
                 <controller identifier="WeatherInterfaceController" title="Clima" id="AWh-wp-Zj4" customClass="WeatherInterfaceController">
                     <items>
                         <label width="135" alignment="center" text="30 °C" textAlignment="center" id="n71-QD-g9F">
-                            <fontDescription key="font" type="system" weight="heavy" pointSize="23"/>
+                            <fontDescription key="font" type="system" weight="heavy" pointSize="33"/>
                         </label>
                         <group width="1" alignment="left" id="Iw8-a0-yDd">
                             <items>
@@ -58,9 +58,9 @@
                         <label width="133" alignment="left" text="Nublado" textAlignment="center" numberOfLines="0" id="Kh3-Dp-0RK">
                             <fontDescription key="font" type="system" pointSize="12"/>
                         </label>
-                        <button width="1" alignment="left" title="Ver mapa" id="9Dx-Kf-Lu3">
+                        <button width="1" alignment="left" title="Ver Mapa" id="42L-Rd-9dP">
                             <connections>
-                                <action selector="btnShowMapPressed" destination="AWh-wp-Zj4" id="ZTf-IW-3Ho"/>
+                                <action selector="btnShowMapPressed" destination="AWh-wp-Zj4" id="dw3-66-FSY"/>
                             </connections>
                         </button>
                     </items>
@@ -72,14 +72,21 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="433" y="348"/>
+            <point key="canvasLocation" x="427" y="348"/>
         </scene>
-        <!--Interface Controller-->
+        <!--Mapa-->
         <scene sceneID="EDt-Fk-WDx">
             <objects>
-                <controller id="PfZ-w1-9Lb"/>
+                <controller identifier="MapInterfaceController" title="Mapa" id="PfZ-w1-9Lb" customClass="MapInterfaceController">
+                    <items>
+                        <map alignment="left" id="jb1-xB-Ilj"/>
+                    </items>
+                    <connections>
+                        <outlet property="map" destination="jb1-xB-Ilj" id="SLZ-ei-DZK"/>
+                    </connections>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="621" y="344"/>
+            <point key="canvasLocation" x="665" y="348"/>
         </scene>
         <!--Glance Interface Controller-->
         <scene sceneID="BOz-TT-tkC">
@@ -118,4 +125,5 @@
             <point key="canvasLocation" x="553" y="1001"/>
         </scene>
     </scenes>
+    <color key="tintColor" red="1" green="0.68235294120000001" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

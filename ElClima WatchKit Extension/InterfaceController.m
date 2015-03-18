@@ -34,6 +34,11 @@
 - (void)willActivate {
     // This method is called when watch view controller is about to be visible to user
     [super willActivate];
+    NSArray *allLocationsTemp = [[LocationUtilities getLocations] allKeys];
+    if (self.locations.count != allLocationsTemp.count) {
+        self.locations = allLocationsTemp;
+        [self configureTableWithData];
+    }
 }
 
 - (void)didDeactivate {

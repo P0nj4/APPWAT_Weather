@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet WKInterfaceLabel *lblHumidity;
 @property (weak, nonatomic) IBOutlet WKInterfaceLabel *lblWindSpeed;
 @property (weak, nonatomic) IBOutlet WKInterfaceLabel *lblDescription;
+@property (nonatomic, strong) NSString *coordinates;
 
 @end
 
@@ -22,9 +23,9 @@
 
 - (void)awakeWithContext:(id)context {
     [super awakeWithContext:context];
-    NSString *coordinates = context;
-    NSString *lat = [[coordinates componentsSeparatedByString:@","] firstObject];
-    NSString *lon = [[coordinates componentsSeparatedByString:@","] lastObject];
+    self.coordinates = context;
+    NSString *lat = [[self.coordinates componentsSeparatedByString:@","] firstObject];
+    NSString *lon = [[self.coordinates componentsSeparatedByString:@","] lastObject];
     
     [Weather loadWheaterForLat:[lat floatValue] Lon:[lon floatValue] completationHandler:^(NSError **error, Weather *result) {
         if (!error) {
@@ -48,6 +49,7 @@
 }
 
 - (IBAction)btnShowMapPressed {
+    [self pushControllerWithName:@"MapInterfaceController" context:self.coordinates];
 }
 
 @end

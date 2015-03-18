@@ -28,6 +28,7 @@
 		44E5E9311AB8D0A200F72F39 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44E5E92F1AB8D0A200F72F39 /* LaunchScreen.xib */; };
 		44E5E9491AB8D26900F72F39 /* Weather.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E5E9481AB8D26900F72F39 /* Weather.m */; };
 		4B8506F41AB9D00400B8A2EB /* WeatherInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8506F31AB9D00400B8A2EB /* WeatherInterfaceController.m */; };
+		4B8506F71AB9D5A100B8A2EB /* MapInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8506F61AB9D5A100B8A2EB /* MapInterfaceController.m */; };
 		4BD0092A1AB9BE15007D617A /* LocationUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD009291AB9BE15007D617A /* LocationUtilities.m */; };
 		4BD0092D1AB9C456007D617A /* LocationUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD009291AB9BE15007D617A /* LocationUtilities.m */; };
 		4BD009311AB9C65A007D617A /* LocationRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD009301AB9C65A007D617A /* LocationRow.m */; };
@@ -114,6 +115,8 @@
 		44E5E9481AB8D26900F72F39 /* Weather.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Weather.m; sourceTree = "<group>"; };
 		4B8506F21AB9D00400B8A2EB /* WeatherInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherInterfaceController.h; sourceTree = "<group>"; };
 		4B8506F31AB9D00400B8A2EB /* WeatherInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherInterfaceController.m; sourceTree = "<group>"; };
+		4B8506F51AB9D5A100B8A2EB /* MapInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapInterfaceController.h; sourceTree = "<group>"; };
+		4B8506F61AB9D5A100B8A2EB /* MapInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapInterfaceController.m; sourceTree = "<group>"; };
 		4BD009281AB9BE15007D617A /* LocationUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationUtilities.h; sourceTree = "<group>"; };
 		4BD009291AB9BE15007D617A /* LocationUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationUtilities.m; sourceTree = "<group>"; };
 		4BD0092B1AB9C065007D617A /* ElClima.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ElClima.entitlements; sourceTree = "<group>"; };
@@ -164,6 +167,8 @@
 				44C6A6BE1AB8E1BE00548D26 /* Supporting Files */,
 				4B8506F21AB9D00400B8A2EB /* WeatherInterfaceController.h */,
 				4B8506F31AB9D00400B8A2EB /* WeatherInterfaceController.m */,
+				4B8506F51AB9D5A100B8A2EB /* MapInterfaceController.h */,
+				4B8506F61AB9D5A100B8A2EB /* MapInterfaceController.m */,
 			);
 			path = "ElClima WatchKit Extension";
 			sourceTree = "<group>";
@@ -467,6 +472,7 @@
 			files = (
 				44C6A6C61AB8E1BE00548D26 /* NotificationController.m in Sources */,
 				4B8506F41AB9D00400B8A2EB /* WeatherInterfaceController.m in Sources */,
+				4B8506F71AB9D5A100B8A2EB /* MapInterfaceController.m in Sources */,
 				4BD009311AB9C65A007D617A /* LocationRow.m in Sources */,
 				44C6A6C31AB8E1BE00548D26 /* InterfaceController.m in Sources */,
 				44C6A6C91AB8E1BE00548D26 /* GlanceController.m in Sources */,
