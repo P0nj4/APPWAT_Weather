@@ -1,3 +1,3 @@
 # APPWAT_Weather
 
-![](http://recordit.co/eoL5wqjDIf)
+![](http://g.recordit.co/eoL5wqjDIf.gif)
