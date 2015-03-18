@@ -61,6 +61,9 @@
     [self pushControllerWithName:@"WeatherInterfaceController" context:[[LocationUtilities getLocations] objectForKey:selectedLocation]];
 }
 
+- (IBAction)btnSeeMore {
+    [self presentControllerWithNames:@[@"SeeMoreInterfaceController", @"SeeMore2", @"SeeMoreInterfaceController"] contexts:@[@"Apps", @"Glances", @"Notifications"]];
+}
 @end
 
 

@@ -28,6 +28,16 @@
                             </items>
                         </table>
                     </items>
+                    <menu key="menu" id="zAD-vT-9Or">
+                        <items>
+                            <menuItem title="Ver Mas?" icon="add" id="z1O-YP-M2a">
+                                <connections>
+                                    <action selector="btnSeeMore" destination="AgC-eL-Hgc" id="WFV-JD-MVv"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Cancelar" icon="decline" id="gTX-oi-3N0"/>
+                        </items>
+                    </menu>
                     <connections>
                         <outlet property="table" destination="Vwo-7e-AgN" id="I2c-P8-9zl"/>
                     </connections>
@@ -80,7 +90,36 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="427" y="346.5"/>
+            <point key="canvasLocation" x="427" y="241.5"/>
+        </scene>
+        <!--SeeMoreInterfaceController-->
+        <scene sceneID="oFh-wS-fa8">
+            <objects>
+                <controller identifier="SeeMoreInterfaceController" id="rb6-4O-glG">
+                    <items>
+                        <label alignment="left" text="Desarrollador:" id="qQf-86-KAi">
+                            <fontDescription key="font" type="system" pointSize="10"/>
+                        </label>
+                        <label alignment="left" text="Germán Pereyra" id="ScL-wF-3QH"/>
+                        <imageView width="134" height="124" alignment="center" image="photo" contentMode="scaleAspectFit" id="eCe-td-voE"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="444" y="554.5"/>
+        </scene>
+        <!--SeeMore2-->
+        <scene sceneID="fUF-0o-0l9">
+            <objects>
+                <controller identifier="SeeMore2" id="PVt-p4-wlU">
+                    <items>
+                        <label alignment="left" text="Datos:" id="U0p-bV-KpA">
+                            <fontDescription key="font" type="system" pointSize="10"/>
+                        </label>
+                        <label alignment="left" text="Para la obtención de los datos de clima, se utiliza la API de WUndererground" numberOfLines="0" id="GMz-eH-u4b"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="601" y="567"/>
         </scene>
         <!--Mapa-->
         <scene sceneID="EDt-Fk-WDx">
@@ -94,7 +133,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="665" y="348"/>
+            <point key="canvasLocation" x="632" y="273"/>
         </scene>
         <!--Glance Interface Controller-->
         <scene sceneID="BOz-TT-tkC">
@@ -107,7 +146,7 @@
                     <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
                 </glanceController>
             </objects>
-            <point key="canvasLocation" x="235" y="672"/>
+            <point key="canvasLocation" x="241" y="768"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
