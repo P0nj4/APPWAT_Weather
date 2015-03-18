@@ -40,22 +40,29 @@
             <objects>
                 <controller identifier="WeatherInterfaceController" title="Clima" id="AWh-wp-Zj4" customClass="WeatherInterfaceController">
                     <items>
-                        <label width="135" alignment="center" text="30 °C" textAlignment="center" id="n71-QD-g9F">
-                            <fontDescription key="font" type="system" weight="heavy" pointSize="33"/>
-                        </label>
+                        <group width="135" alignment="right" id="CB4-P3-u62">
+                            <items>
+                                <label width="81" alignment="right" text="0 °C" textAlignment="center" id="n71-QD-g9F">
+                                    <fontDescription key="font" type="system" weight="heavy" pointSize="33"/>
+                                </label>
+                                <imageView width="45" height="45" alignment="left" contentMode="scaleAspectFit" animationDuration="1" id="R7Z-QO-bKK"/>
+                            </items>
+                        </group>
                         <group width="1" alignment="left" id="Iw8-a0-yDd">
                             <items>
                                 <label alignment="left" text="Humedad:" id="TAc-Uh-Ekw"/>
-                                <label alignment="left" text="50%" id="fIX-EF-Wac"/>
+                                <label width="53" alignment="right" text="0%" textAlignment="right" id="fIX-EF-Wac"/>
                             </items>
                         </group>
                         <group width="1" alignment="left" id="Ue1-XY-5We">
                             <items>
-                                <label alignment="left" text="Viento" id="CHv-hq-Ffs"/>
-                                <label alignment="left" text="1 km/h" id="Vbj-wh-1ag"/>
+                                <label alignment="left" text="Viento:" id="CHv-hq-Ffs"/>
+                                <label width="53" alignment="right" text="0 km/h" textAlignment="left" minimumScaleFactor="0.50000000000000011" id="Vbj-wh-1ag">
+                                    <variation key="device=watch38mm" width="78"/>
+                                </label>
                             </items>
                         </group>
-                        <label width="133" alignment="left" text="Nublado" textAlignment="center" numberOfLines="0" id="Kh3-Dp-0RK">
+                        <label width="133" alignment="left" text="-" textAlignment="center" numberOfLines="0" id="Kh3-Dp-0RK">
                             <fontDescription key="font" type="system" pointSize="12"/>
                         </label>
                         <button width="1" alignment="left" title="Ver Mapa" id="42L-Rd-9dP">
@@ -65,6 +72,7 @@
                         </button>
                     </items>
                     <connections>
+                        <outlet property="imgIcon" destination="R7Z-QO-bKK" id="b1g-MJ-vlr"/>
                         <outlet property="lblDescription" destination="Kh3-Dp-0RK" id="KlY-xu-spR"/>
                         <outlet property="lblHumidity" destination="fIX-EF-Wac" id="qOz-ZO-FTC"/>
                         <outlet property="lblTemp" destination="n71-QD-g9F" id="xG8-2g-glQ"/>
@@ -72,7 +80,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="427" y="348"/>
+            <point key="canvasLocation" x="427" y="346.5"/>
         </scene>
         <!--Mapa-->
         <scene sceneID="EDt-Fk-WDx">

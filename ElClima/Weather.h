@@ -15,9 +15,11 @@ typedef void (^WeatherLoadCompletition)(NSError **, Weather *);
 @property (nonatomic, strong) NSString *countryCode;
 @property (nonatomic, strong) NSString *place;
 @property (nonatomic, strong) NSString *skyDescription;
+@property (nonatomic, strong) NSString *icon;
 @property (nonatomic) NSInteger temp;
-@property (nonatomic) NSInteger humidity;
+@property (nonatomic, strong) NSString *humidity;
 @property (nonatomic) NSInteger windSpeed;
 + (void)loadWheaterForLat:(float)lat Lon:(float)lon completationHandler:(WeatherLoadCompletition)completition;
++ (void)loadUWheaterForLat:(float)lat Lon:(float)lon completationHandler:(WeatherLoadCompletition)completition;
 @end
 
